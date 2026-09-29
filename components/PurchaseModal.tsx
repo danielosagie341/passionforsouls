@@ -34,7 +34,7 @@ export default function PurchaseModal({ isOpen, onClose, bookTitle }: PurchaseMo
 
         <h3 className="font-display text-2xl text-white">Purchase {bookTitle}</h3>
         <p className="mt-2 text-sm text-white/60">
-          Choose how you'd like to contact us to complete your purchase.
+          Choose how you&apos;d like to contact us to complete your purchase.
         </p>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2">

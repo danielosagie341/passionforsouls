@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { CalendarDays, MapPin, Ticket, Play } from "lucide-react";
 import HeroCarousel from "./HeroCarousel";
@@ -17,10 +18,12 @@ export default function Hero() {
         <div className="absolute inset-0 bg-radial-fade" />
         
         {/* Background image */}
-        <img 
-          src="/images/bg.png" 
-          alt="" 
-          className="absolute inset-0 h-full w-full object-cover object-top"
+        <Image
+          src="/images/bg.png"
+          alt=""
+          fill
+          className="absolute inset-0 object-cover object-top"
+          priority
         />
 
         <div className="grain absolute inset-0" />

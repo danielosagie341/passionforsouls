@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export type Pose = "forward" | "writing" | "reading" | "thinking";
 
 interface Props {
@@ -19,9 +21,11 @@ export default function PortraitSilhouette({ pose, className }: Props) {
   };
 
   return (
-    <img
+    <Image
       src={imageMap[pose]}
       alt={pose}
+      width={300}
+      height={400}
       className={className}
     />
   );
