@@ -5,21 +5,18 @@ import "./globals.css";
 const display = Playfair_Display({
   subsets: ["latin"],
   weight: ["500", "600", "700"],
-  variable: "--font-display",
   display: "swap",
 });
 
 const body = Manrope({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-body",
   display: "swap",
 });
 
 const script = Parisienne({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-script",
   display: "swap",
 });
 
@@ -35,8 +32,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} ${script.variable}`}>
-      <body className="bg-ink-950 font-body text-white antialiased">{children}</body>
+    <html lang="en">
+      <body className={`${display.className} ${body.className} ${script.className} bg-ink-950 text-white antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
