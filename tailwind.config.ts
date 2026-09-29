@@ -19,9 +19,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ["var(--font-display)", "Playfair Display", "serif"],
-        body: ["var(--font-body)", "Manrope", "sans-serif"],
-        script: ["var(--font-script)", "Parisienne", "cursive"],
+        display: ["Merriweather", "serif"],
+        body: ["Inter", "sans-serif"],
+        script: ["Inter", "sans-serif"],
       },
       backgroundImage: {
         "radial-fade":

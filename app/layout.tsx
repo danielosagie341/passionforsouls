@@ -1,22 +1,16 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Manrope, Parisienne } from "next/font/google";
+import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
 
-const display = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  display: "swap",
-});
-
-const body = Manrope({
+const body = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
-const script = Parisienne({
+const display = Merriweather({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "700", "900"],
   display: "swap",
 });
 
@@ -33,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${display.className} ${body.className} ${script.className} bg-ink-950 text-white antialiased`}>
+      <body className={`${body.className} ${display.className} bg-ink-950 text-white antialiased`}>
         {children}
       </body>
     </html>
