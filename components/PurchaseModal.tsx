@@ -8,7 +8,7 @@ interface PurchaseModalProps {
   bookTitle: string;
 }
 
-const PHONE_NUMBER = "+1234567890"; // Replace with actual phone number
+const PHONE_NUMBER = "+2349025440148";
 
 export default function PurchaseModal({ isOpen, onClose, bookTitle }: PurchaseModalProps) {
   if (!isOpen) return null;
